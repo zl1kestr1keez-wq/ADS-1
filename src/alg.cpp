@@ -46,7 +46,7 @@ uint64_t sumPrime(uint64_t hbound) {
 }
 
 uint64_t twinPrimes(uint64_t lbound, uint64_t hbound) {
-  if (hbound < 3  lbound >= hbound)
+  if (hbound < 3 || lbound >= hbound)
     return 0;
   uint64_t cnt = 0;
   uint64_t a = lbound;
